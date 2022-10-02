@@ -3,5 +3,4 @@ Version: 1.0
 Architecture: all
 Maintainer: Kerem Gür <kerem.gur@metu.edu.tr>
 Depends: python3
-Homepage: http://keremrecepgur.wordpress.com
 Description: My first application for PARDUS OS.
