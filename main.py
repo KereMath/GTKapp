@@ -11,14 +11,14 @@ from MainWindow import MainWindow
 class Uygulama(Gtk.Application):
     def __init__(self, *args, **kwargs):
         super().__init__(*args,
-            application_id="tr.org.pardus.ornek-uygulama",
+            application_id="",
             flags=Gio.ApplicationFlags.FLAGS_NONE,
             **kwargs)
     
-    def do_activate(self): # do_active metodu program açıldığında çalışır.
-        self.window = MainWindow(self) # MainWindow nesnemizi oluşturduk.
-        # Burada sadece oluşturmamız yeterli çünkü göstermeyi MainWindow'un içinde yaptık.
+    def do_activate(self): # This method runs when the program is opened.
+        self.window = MainWindow(self) # Created out Mainwindow object
+      
 
-# Uygulama nesnemizi olusturup calistiralim.
+# Creating our application object and running
 app = Uygulama()
 app.run(sys.argv)
